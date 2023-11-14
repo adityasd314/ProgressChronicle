@@ -1,0 +1,52 @@
+{
+	// Place your ProgressChronicle workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Daily Log Template": {
+		"prefix": "!!!",
+		"body": [
+			"# Daily Log - ${1:${CURRENT_DATE}-${CURRENT_MONTH}-${CURRENT_YEAR}}",
+			"",
+			"## Day Start Time: ${2:${CURRENT_HOUR}:${CURRENT_MINUTE}}",
+			"- [ ] Morning routine",
+			"",
+			"## Today's Goals",
+			"- [ ] Goal 1",
+			"",
+			"## Today's Progress",
+			"- [ ] Accomplishment 1",
+			"",
+			"## Notes",
+			"- Any additional notes or observations go here.",
+			"",
+			"## Thoughts",
+			"- Reflect on your day, challenges faced, or any new ideas.",
+			"",
+			"## Resources",
+			"- List any articles, books, videos, or other resources you found valuable today.",
+			"",
+			"## Quote of the Day",
+			"> \"${3:Your quote for inspiration or reflection.}\"",
+			"",
+			"## Day End Time: ${4:HH:MM} AM/PM",
+			"- [ ] Reflect on the day",
+			"- [ ] Plan for tomorrow",
+			"",
+			"---"
+		],
+		"description": "Daily Log Template"
+	}
+	,
+	"Current Time":{
+		"prefix":"ccc",
+		"scope":"markdown",
+		"body":[
+			"${1:${CURRENT_HOUR}}:${2:${CURRENT_MINUTE}}"
+			
+		]
+	}	
+}
